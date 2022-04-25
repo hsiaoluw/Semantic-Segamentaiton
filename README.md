@@ -8,9 +8,9 @@ If you don't have gpu, use command --gpu False
 The original dataset is in img_data.tar.gz, decompress it. 
 Use --dataurl to indicate the location of source data dir, the original images are in /ori folder, segmented images are in /seg folder.
 
---gen_type  choices=['seg', 'ori']                 to generate orignal images or segemented images
---gan_type  choices=['dcgan', 'wgan', 'wgangp']    gans with different loss functions
---epoch     number of epochs
+Option --gen_type  choices=['seg', 'ori']                 to generate orignal images or segemented images
+Option --gan_type  choices=['dcgan', 'wgan', 'wgangp']    gans with different loss functions
+Option --epoch     number of epochs
 --
 train_eval.py: the main train procedures, and evaluation funcitons
 data_input.py: preprocess the data, store the data in to datasets, provide batch operators to be called
